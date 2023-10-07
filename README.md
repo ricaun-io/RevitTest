@@ -5,10 +5,38 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
+[![Release](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a Framework to execute NUnit tests using Visual Studio and Revit.
 
 This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
+
+## ricaun.RevitTest
+
+The [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework is composed by 3 projects:
+
+```mermaid
+---
+title: ricaun.RevitTest
+---
+flowchart LR
+    dll(dll)
+    TestAdapter[TestAdapter]
+    Console[Console]
+    Application[Application]
+    dll--dotnet test-->TestAdapter
+    TestAdapter--Start-->Console
+    Console--Run Tests-->Application
+    Console-.Open/Close.-Revit
+    subgraph Revit [Revit]
+        Application
+    end
+```
+
+* TestAdapter: The NUnit TestAdapter is responsible for executing the `Console` and waits for the tests results.
+* Console: The Console application responsible for communicating with Revit, installing the `Application`, and opening/closing Revit.
+* Application: The Revit Plugin application is responsible for executing the tests sent by `Console`.
+
 
 ## Sample
 
@@ -18,7 +46,7 @@ The sample project contains the basic usage of the [ricaun.RevitTest](https://gi
 
 ## Install
 
-To install the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework, you can use the NuGet package manager.
+To install the [ricaun.RevitTest.TestAdapter](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter), you can use the NuGet package manager.
 
 ### PackageReference 
 
@@ -55,7 +83,7 @@ No, maybe yes in the future.
 
 </details>
 
-<details><summary>Do you need a account to use the <b>ricaun.RevitTest</b> Framework ?</summary><br>
+<details><summary>Do you need an account to use the <b>ricaun.RevitTest</b> Framework ?</summary><br>
 
 Yes, to use the `Application` inside Revit you need to have an Autodesk account to authenticate with [ricaun.io](https://ricaun.io/) using [Autodesk Platform Services](https://aps.autodesk.com/).
 
@@ -69,7 +97,13 @@ Not yet, but is in the roadmap (15 days offline after authentication).
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework works with Design Automation for Revit ?</summary><br>
 
-Yes, is possible to switch the `Application` to run the tests using the Design Automation for Revit instead of the Revit for desktop. (Not available yet)
+Yes, is possible to switch the `Console` to run the tests using the Design Automation for Revit instead of the Revit for desktop. (Not available yet)
+
+</details>
+
+<details><summary>Do you have plans to create a similar test framework for AutoCAD or Inventor ?</summary><br>
+
+Could be possible, but I only use Revit so I don't have the incentive to do that.
 
 </details>
 
@@ -119,7 +153,6 @@ Or in the `.csproj` file:
 
 </details>
 
-
 <details><summary>How the force to open a new Revit process ?</summary><br>
 
 By default `TestAdapter` uses the Revit process opened with the same version to run the tests.
@@ -159,6 +192,29 @@ Or in the `.csproj` file:
   </AssemblyAttribute>
 </ItemGroup>
 ```
+
+</details>
+
+<details><summary>How to enable log in the TestAdapter ?</summary><br>
+
+The log verbosity has two levels `1`(Normal) and `2`(Debug), to enable you can use the `AssemblyMetadataAttribute` property with `NUnit.Verbosity` in the test project, like this:
+
+In the `.cs` file:
+```csharp
+[assembly: System.Reflection.AssemblyMetadata("NUnit.Verbosity", "1")]
+```
+Or in the `.csproj` file:
+```xml
+<ItemGroup>
+  <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+    <_Parameter1>NUnit.Verbosity</_Parameter1>
+    <_Parameter2>1</_Parameter2>
+  </AssemblyAttribute>
+</ItemGroup>
+```
+
+</details>
+
 
 
 ## License
