@@ -101,6 +101,12 @@ Yes, is possible to switch the `Console` to run the tests using the Design Autom
 
 </details>
 
+<details><summary>The <b>ricaun.RevitTest</b> Framework works in Rider ?</summary><br>
+
+I tested with Rider, and works with some issues: [RevitTest in Rider - 1.1.2-beta](https://youtu.be/_xgkd6ItSrg)
+
+</details>
+
 <details><summary>Do you have plans to create a similar test framework for AutoCAD or Inventor ?</summary><br>
 
 Could be possible, but I only use Revit so I don't have the incentive to do that.
