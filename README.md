@@ -7,6 +7,8 @@
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 [![Release](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
+[![RevitTest](assets/RevitTest.png)](https://github.com/ricaun-io/ricaun.RevitTest)
+
 [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a Framework to execute NUnit tests using Visual Studio and Revit.
 
 This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
@@ -67,6 +69,10 @@ If your are using `dotnet test` to execute the tests, you need to add the `IsTes
 <IsTestProject>true</IsTestProject>
 ```
 
+## Wiki
+
+For more information see [Wiki](wiki).
+
 ## FAQ
 
 </details>
@@ -115,7 +121,7 @@ Could be possible, but I only use Revit so I don't have the incentive to do that
 
 <details><summary>How the <b>ricaun.RevitTest</b> Framework knows what Revit version to open ?</summary><br>
 
-The `TestAdapter` checks for some `RevitApi` reference in the assembly and get the version from it. If not found, the `TestAdapter` will use the lowest version of Revit installed in the machine.
+The `TestAdapter` checks for some `RevitApi` reference in the test assembly and get the version from it. If not found, the `TestAdapter` will use the lowest version of Revit installed in the machine.
 
 </details>
 
