@@ -1,4 +1,4 @@
-# RevitTest
+# RevitTest.Samples
 
 [![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](../..)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
@@ -7,11 +7,11 @@
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 [![Release](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
-[![RevitTest](assets/RevitTest.png)](https://github.com/ricaun-io/RevitTest)
+[![RevitTest.Samples](assets/RevitTest.Samples.png)](https://github.com/ricaun-io/RevitTest)
 
 [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a Framework to execute NUnit tests using Visual Studio and Revit.
 
-This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
+**This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.**
 
 ## Sample
 
