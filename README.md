@@ -7,38 +7,11 @@
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 [![Release](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
-[![RevitTest](assets/RevitTest.png)](https://github.com/ricaun-io/ricaun.RevitTest)
+[![RevitTest](assets/RevitTest.png)](https://github.com/ricaun-io/RevitTest)
 
 [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a Framework to execute NUnit tests using Visual Studio and Revit.
 
 This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
-
-## ricaun.RevitTest
-
-The [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework is composed by 3 projects:
-
-```mermaid
----
-title: ricaun.RevitTest
----
-flowchart LR
-    dll(dll)
-    TestAdapter[TestAdapter]
-    Console[Console]
-    Application[Application]
-    dll--dotnet test-->TestAdapter
-    TestAdapter--Start-->Console
-    Console--Run Tests-->Application
-    Console-.Open/Close.-Revit
-    subgraph Revit [Revit]
-        Application
-    end
-```
-
-* TestAdapter: The NUnit TestAdapter is responsible for executing the `Console` and waits for the tests results.
-* Console: The Console application responsible for communicating with Revit, installing the `Application`, and opening/closing Revit.
-* Application: The Revit Plugin application is responsible for executing the tests sent by `Console`.
-
 
 ## Sample
 
@@ -71,7 +44,34 @@ If your are using `dotnet test` to execute the tests, you need to add the `IsTes
 
 ## Wiki
 
-For more information see [Wiki](wiki).
+For more information see [Wiki](https://github.com/ricaun-io/RevitTest/wiki).
+
+## ricaun.RevitTest
+
+The [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework is composed by 3 projects:
+
+```mermaid
+---
+title: ricaun.RevitTest
+---
+flowchart LR
+    dll(dll)
+    TestAdapter[TestAdapter]
+    Console[Console]
+    Application[Application]
+    dll--dotnet test-->TestAdapter
+    TestAdapter--Start-->Console
+    Console--Run Tests-->Application
+    Console-.Open/Close.-Revit
+    subgraph Revit [Revit]
+        Application
+    end
+```
+
+* **TestAdapter**: The NUnit TestAdapter is responsible for executing the `Console` and waits for the tests results.
+* **Console**: The Console application responsible for communicating with Revit, installing the `Application`, and opening/closing Revit.
+* **Application**: The Revit Plugin application is responsible for executing the tests sent by `Console`.
+
 
 ## FAQ
 
