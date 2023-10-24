@@ -97,7 +97,7 @@ Yes, to use the `Application` inside Revit you need to have an Autodesk account 
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework works offline ?</summary><br>
 
-Not yet, but is in the roadmap (15 days offline after authentication).
+Yes, 14 days offline after authentication.
 
 </details>
 
