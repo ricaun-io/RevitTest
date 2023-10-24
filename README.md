@@ -13,11 +13,11 @@
 
 **This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.**
 
-## Sample
+## Samples
 
 The sample project contains the basic usage of the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
 
-* [RevitTest.Sample](RevitTest.Sample)
+* [RevitTest.Samples](RevitTest.Samples)
 
 ## Install
 
