@@ -1,6 +1,6 @@
 # RevitTest.Samples
 
-[![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](../..)
+[![Revit 2017](https://img.shields.io/badge/Revit-2017_to_2025-blue.svg)](../..)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -9,9 +9,19 @@
 
 [![RevitTest.Samples](assets/RevitTest.Samples.png)](https://github.com/ricaun-io/RevitTest)
 
-[ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a Framework to execute NUnit tests using Visual Studio and Revit.
+[ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) is a multi-version NUnit testing framework for Revit API.  **Support Revit 2017 to 2025.**
 
 **This project contain samples and the basic info about the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.**
+
+## Features
+
+* `Visual Studio` run tests and debug inside Revit.
+
+<img src=assets/RevitTest.Feature.Run.gif width=480><img src=assets/RevitTest.Feature.Debug.gif width=480>
+
+* Open and Close Revit and `dotnet test` execution.
+
+<img src=assets/RevitTest.Feature.Open.Close.gif width=480><img src=assets/RevitTest.Feature.dotnet.gif width=480>
 
 ## Samples
 
