@@ -94,7 +94,7 @@ Not yet.
 
 <details><summary>Do you need an account to use the <b>ricaun.RevitTest</b> Framework ?</summary><br>
 
-Yes.
+Yes, an Autodesk account is required inside Revit.
 
 </details>
 
@@ -229,8 +229,6 @@ Or in the `.csproj` file:
 ```
 
 </details>
-
-
 
 ## License
 
