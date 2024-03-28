@@ -15,7 +15,7 @@
 
 ## Features
 
-* `Visual Studio` run tests and debug inside Revit.
+* Run tests and debug using `Visual Studio` to execute tests inside Revit.
 
 <img src=assets/RevitTest.Feature.Run.gif width=400><img src=assets/RevitTest.Feature.Debug.gif width=400>
 
