@@ -28,7 +28,7 @@ To install the [ricaun.RevitTest.TestAdapter](https://www.nuget.org/packages/ric
 
 The main package is [ricaun.RevitTest.TestAdapter](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter) that manage the NUnit test execution of tests inside Revit.
 
-***The machine need to have the Revit installed to work.***
+***The machine need to have the Autodesk Revit installed to work.***
 
 ```xml
 <PackageReference Include="NUnit" Version="3.13.3" />
@@ -88,13 +88,19 @@ It is a requirement to have [Autodesk Revit](http://revit.com) installed on the 
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework is open-source ?</summary><br>
 
-Not yet.
+Not available yet.
 
 </details>
 
 <details><summary>Do you need an account to use the <b>ricaun.RevitTest</b> Framework ?</summary><br>
 
 Yes, an Autodesk account is required inside Revit.
+
+</details>
+
+<details><summary>The <b>ricaun.RevitTest</b> Framework collects any use data ?</summary><br>
+
+No.
 
 </details>
 
