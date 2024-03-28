@@ -23,6 +23,10 @@
 
 <img src=assets/RevitTest.Feature.Open.Close.gif width=400><img src=assets/RevitTest.Feature.dotnet.gif width=400>
 
+## Discussions
+
+[RevitTest Discussions](https://github.com/ricaun-io/RevitTest/discussions) is a place to share ideas and aks questions about the framework.
+
 ## Samples
 
 The sample project contains the basic usage of the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
