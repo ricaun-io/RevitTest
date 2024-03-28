@@ -18,6 +18,7 @@
 The sample project contains the basic usage of the [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework.
 
 * [RevitTest.Samples](RevitTest.Samples)
+* [RevitTest.Language](https://github.com/ricaun-io/RevitTest.Language)
 
 ## Install
 
@@ -41,10 +42,6 @@ If your are using `dotnet test` to execute the tests, you need to add the `IsTes
 ```xml
 <IsTestProject>true</IsTestProject>
 ```
-
-## Wiki
-
-For more information see [Wiki](https://github.com/ricaun-io/RevitTest/wiki).
 
 ## ricaun.RevitTest
 
@@ -83,21 +80,27 @@ Yes.
 
 </details>
 
+<details><summary>What are the requirements to use <b>ricaun.RevitTest</b> Framework ?</summary><br>
+
+It is a requirement to have [Autodesk Revit](http://revit.com) installed on the machine to run the tests in the official software.
+
+</details>
+
 <details><summary>The <b>ricaun.RevitTest</b> Framework is open-source ?</summary><br>
 
-No, maybe yes in the future.
+Not yet.
 
 </details>
 
 <details><summary>Do you need an account to use the <b>ricaun.RevitTest</b> Framework ?</summary><br>
 
-Yes, to use the `Application` inside Revit you need to have an Autodesk account to authenticate with [ricaun.io](https://ricaun.io/) using [Autodesk Platform Services](https://aps.autodesk.com/).
+Yes.
 
 </details>
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework works offline ?</summary><br>
 
-Yes, 14 days offline after authentication.
+Yes.
 
 </details>
 
