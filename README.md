@@ -17,11 +17,11 @@
 
 * `Visual Studio` run tests and debug inside Revit.
 
-<img src=assets/RevitTest.Feature.Run.gif width=480><img src=assets/RevitTest.Feature.Debug.gif width=480>
+<img src=assets/RevitTest.Feature.Run.gif width=400><img src=assets/RevitTest.Feature.Debug.gif width=400>
 
 * Open and Close Revit and `dotnet test` execution.
 
-<img src=assets/RevitTest.Feature.Open.Close.gif width=480><img src=assets/RevitTest.Feature.dotnet.gif width=480>
+<img src=assets/RevitTest.Feature.Open.Close.gif width=400><img src=assets/RevitTest.Feature.dotnet.gif width=400>
 
 ## Samples
 
