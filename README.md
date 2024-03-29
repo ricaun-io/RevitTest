@@ -57,6 +57,31 @@ If your are using `dotnet test` to execute the tests, you need to add the `IsTes
 <IsTestProject>true</IsTestProject>
 ```
 
+### Example
+
+The framework injects the `UIApplication`, `UIControllerApplication`, `Application`, and `ControllerApplication` Revit objects to the tests methods, use in the method with `[OneTimeSetUp]` or `[SetUp]`.
+
+```c#
+using Autodesk.Revit.UI;
+using NUnit.Framework;
+
+public class RevitTest
+{
+    private UIApplication uiapp;
+    [OneTimeSetUp]
+    public void Setup(UIApplication uiapp)
+    {
+        this.uiapp = uiapp;
+    }
+    [Test]
+    public void VersionName()
+    {
+        Assert.IsNotNull(uiapp);
+        System.Console.WriteLine(uiapp.Application.VersionName);
+    }
+}
+```
+
 ## ricaun.RevitTest
 
 The [ricaun.RevitTest](https://github.com/ricaun-io/ricaun.RevitTest) Framework is composed by 3 projects:
