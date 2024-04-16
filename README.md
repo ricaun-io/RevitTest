@@ -49,6 +49,14 @@ The main package is [ricaun.RevitTest.TestAdapter](https://www.nuget.org/package
 <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
 ```
 
+#### .Net Core
+
+If you are using `.Net Core`, you need to add the `Microsoft.NET.Test.Sdk` package to the `.csproj` file.
+
+```xml
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
+```
+
 ### IsTestProject
 
 If your are using `dotnet test` to execute the tests, you need to add the `IsTestProject` property to the `.csproj` file.
