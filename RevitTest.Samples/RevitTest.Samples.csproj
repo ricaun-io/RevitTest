@@ -6,14 +6,32 @@
     <OutputType>Library</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>Latest</LangVersion>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
     <Configurations>Debug;Release</Configurations>
-
-    <RevitVersion>2021</RevitVersion>
-    <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
 
+  <!-- RevitVersion -->
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="$(TargetFramework.StartsWith('net4'))">
+      <PropertyGroup>
+        <RevitVersion>2024</RevitVersion>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <RevitVersion>2025</RevitVersion>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <PropertyGroup>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+  
   <!-- Release -->
   <PropertyGroup Condition="!$(Configuration.Contains('Debug'))">
     <OutputPath>bin\Release\$(RevitVersion)</OutputPath>
@@ -37,6 +55,7 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
   </ItemGroup>
 
   <ItemGroup>
