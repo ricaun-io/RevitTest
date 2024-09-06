@@ -283,6 +283,27 @@ Or in the `.csproj` file:
 
 </details>
 
+<details><summary>How change the timeout for the TestAdapter ?</summary><br>
+
+By default `TestAdapter` have a timeout of `10` minutes.
+To set the timeout you can use the `AssemblyMetadataAttribute` property with `NUnit.Timeout` in the test project, like this:
+
+In the `.cs` file:
+```csharp
+[assembly: System.Reflection.AssemblyMetadata("NUnit.Timeout", "10")]
+```
+Or in the `.csproj` file:
+```xml
+<ItemGroup>
+  <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+    <_Parameter1>NUnit.Timeout</_Parameter1>
+    <_Parameter2>10</_Parameter2>
+  </AssemblyAttribute>
+</ItemGroup>
+```
+
+</details>
+
 ## License
 
 This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
