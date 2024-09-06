@@ -304,6 +304,32 @@ Or in the `.csproj` file:
 
 </details>
 
+<details><summary>How the force Revit to open with <b>Viewer Mode</b> ?</summary><br>
+
+To force the `TestAdapter` to open Revit open with `Viewer Mode`, you can use the `AssemblyMetadataAttribute` property with `NUnit.Language` in the test project to inject the `/viewer` command, like this:
+
+In the `.cs` file:
+```csharp
+[assembly: System.Reflection.AssemblyMetadata("NUnit.Language", "ENU /viewer")]
+```
+Or in the `.csproj` file:
+```xml
+<ItemGroup>
+  <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+    <_Parameter1>NUnit.Language</_Parameter1>
+    <_Parameter2>ENU /viewer</_Parameter2>
+  </AssemblyAttribute>
+</ItemGroup>
+```
+
+The dialog box will be closed automatically when Revit is opened using the `Viewer Mode` when using `TestAdapter`.
+
+![Revit 2025 - viewer mode dialog](https://github.com/user-attachments/assets/d18020f7-c3bf-41ec-8ab9-e73e9884bef7)
+**Viewer mode allows all functionality of Revit, except the following: save or save as in all cases; exporting or publishing modified projects; exporting or publishing any projects to a format containing model data that can be modified; or printing projects after changes are made.**
+
+
+</details>
+
 ## License
 
 This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
