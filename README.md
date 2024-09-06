@@ -165,7 +165,7 @@ Yes, is possible to switch the `Console` to run the tests using the Design Autom
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework works in Rider ?</summary><br>
 
-I tested with Rider, and works with some issues: [RevitTest in Rider - 1.1.2-beta](https://youtu.be/_xgkd6ItSrg)
+Yes, the `TestAdapter` could work with Rider after some configuration, check the discussion: #8
 
 </details>
 
