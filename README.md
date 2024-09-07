@@ -5,7 +5,7 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
-[![Release](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
+[![nuget](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=nuget&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [![RevitTest.Samples](assets/RevitTest.Samples.png)](https://github.com/ricaun-io/RevitTest)
 
@@ -165,7 +165,7 @@ Yes, is possible to switch the `Console` to run the tests using the Design Autom
 
 <details><summary>The <b>ricaun.RevitTest</b> Framework works in Rider ?</summary><br>
 
-I tested with Rider, and works with some issues: [RevitTest in Rider - 1.1.2-beta](https://youtu.be/_xgkd6ItSrg)
+Yes, the `TestAdapter` could work with Rider after some configuration, check the discussion: https://github.com/ricaun-io/RevitTest/discussions/8
 
 </details>
 
@@ -283,9 +283,56 @@ Or in the `.csproj` file:
 
 </details>
 
+<details><summary>How change the timeout for the TestAdapter ?</summary><br>
+
+By default `TestAdapter` have a timeout of `10` minutes.
+To set the timeout you can use the `AssemblyMetadataAttribute` property with `NUnit.Timeout` in the test project, like this:
+
+In the `.cs` file:
+```csharp
+[assembly: System.Reflection.AssemblyMetadata("NUnit.Timeout", "10")]
+```
+Or in the `.csproj` file:
+```xml
+<ItemGroup>
+  <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+    <_Parameter1>NUnit.Timeout</_Parameter1>
+    <_Parameter2>10</_Parameter2>
+  </AssemblyAttribute>
+</ItemGroup>
+```
+
+</details>
+
+<details><summary>How the force Revit to open with <b>Viewer Mode</b> ?</summary><br>
+
+To force the `TestAdapter` to open Revit open with `Viewer Mode`, you can use the `AssemblyMetadataAttribute` property with `NUnit.Language` in the test project to inject the `/viewer` command, like this:
+
+In the `.cs` file:
+```csharp
+[assembly: System.Reflection.AssemblyMetadata("NUnit.Language", "ENU /viewer")]
+```
+Or in the `.csproj` file:
+```xml
+<ItemGroup>
+  <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+    <_Parameter1>NUnit.Language</_Parameter1>
+    <_Parameter2>ENU /viewer</_Parameter2>
+  </AssemblyAttribute>
+</ItemGroup>
+```
+
+The dialog box will be closed automatically when Revit is opened using the `Viewer Mode` when using `TestAdapter`.
+
+![Revit 2025 - viewer mode dialog](https://github.com/user-attachments/assets/d18020f7-c3bf-41ec-8ab9-e73e9884bef7)
+**Viewer mode allows all functionality of Revit, except the following: save or save as in all cases; exporting or publishing modified projects; exporting or publishing any projects to a format containing model data that can be modified; or printing projects after changes are made.**
+
+
+</details>
+
 ## License
 
-This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia.org/wiki/MIT_License).
+This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
 ---
 

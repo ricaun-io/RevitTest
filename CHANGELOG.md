@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] / 2024-09-06
+- Update to [ricaun.RevitTest.TestAdapter 1.4.1](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
+- Video [RevitTest Version 1.4.* - Timeout and Viewer Mode](https://youtu.be/qDIxW0DUKSI)
+- Version `1.4.1` features:
+	- Option `NUnit.Timeout` to set timeout for application, default is 10 minutes.
+	- Auto close `Viewer Mode` dialog box when Revit using `/viewer`.
+	- RevitTest Icon for light and dark theme.
+	- ![RevitTest Panel](https://github.com/user-attachments/assets/1f5c2801-962d-4388-86c6-63a65bcf1c56)
+
 ## [1.0.3] / 2024-05-27
 - Fix `TestCase` issue in version `1.3.2`.
 - Add `Tests_Utils` with test cases for convert meters from internal.
@@ -23,6 +32,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - First Release - [ricaun.RevitTest.TestAdapter 1.3.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [vNext]: ../../compare/1.0.0...HEAD
+[1.0.4]: ../../compare/1.0.3...1.0.4
 [1.0.3]: ../../compare/1.0.2...1.0.3
 [1.0.2]: ../../compare/1.0.1...1.0.2
 [1.0.1]: ../../compare/1.0.0...1.0.1
