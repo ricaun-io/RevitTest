@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.5] / 2024-09-20
 - Update to [ricaun.RevitTest.TestAdapter 1.5.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
-- Video [RevitTest Version 1.5.* - TestCaseSource](https://youtu.be/qDIxW0DUKSI)
+- Video [RevitTest Version 1.5.* - TestCaseSource](https://youtu.be/8ZP5bhP_18M)
 - Version `1.5.0` features:
 	- Support `TestCaseSource` (Fix: #13)
 
