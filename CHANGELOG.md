@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.9] / 2024-12-20
+- Update to [ricaun.RevitTest.TestAdapter 1.8.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
+- Video [RevitTest Version 1.8.0 - Open-Source](https://youtube.com/live/_lsmvQtGftE)
+
 ## [1.0.8] / 2024-12-10
 - Update to [ricaun.RevitTest.TestAdapter 1.7.1](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 - Video [RevitTest Version 1.7.1 - Run async Revit Tests](https://youtu.be/wnNVmGcEp2o)
@@ -52,6 +56,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - First Release - [ricaun.RevitTest.TestAdapter 1.3.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [vNext]: ../../compare/1.0.0...HEAD
+[1.0.9]: ../../compare/1.0.8...1.0.9
 [1.0.8]: ../../compare/1.0.7...1.0.8
 [1.0.7]: ../../compare/1.0.6...1.0.7
 [1.0.6]: ../../compare/1.0.5...1.0.6
