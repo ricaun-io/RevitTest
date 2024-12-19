@@ -54,7 +54,7 @@
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
-    <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*-*" />
+    <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
   </ItemGroup>
 

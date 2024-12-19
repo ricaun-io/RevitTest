@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [1.0.9] / 2024-12-20
+## [1.0.9] / 2024-12-19
 - Update to [ricaun.RevitTest.TestAdapter 1.8.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 - Video [RevitTest Version 1.8.0 - Open-Source](https://youtube.com/live/_lsmvQtGftE)
 
