@@ -24,7 +24,12 @@ namespace RevitTest.Sample
         public static string[] GetRevitFileNames()
         {
             var downloadFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
-            return Directory.GetFiles(downloadFolder, "*.rvt");
+            var files = Directory.GetFiles(downloadFolder, "*.rvt");
+            if (files.Length == 0)
+            {
+                return new[]{"No Revit files found in the Downloads folder." };
+            }
+            return files;
         }
 
         [TestCaseSource(nameof(GetRevitFileNames))]
