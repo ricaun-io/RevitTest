@@ -54,7 +54,7 @@
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
-    <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="1.9.0-alpha.3" />
+    <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
   </ItemGroup>
 
@@ -74,6 +74,7 @@
       <_Parameter2>true</_Parameter2>
     </AssemblyAttribute>
   </ItemGroup>
+  
   <ItemGroup>
     <None Update="Files\Project2019.rvt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
