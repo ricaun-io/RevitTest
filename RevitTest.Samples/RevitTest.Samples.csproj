@@ -29,7 +29,7 @@
   </Choose>
 
   <PropertyGroup>
-    <Version>1.0.9</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   
   <!-- Release -->
@@ -73,6 +73,15 @@
       <_Parameter1>NUnit.Close</_Parameter1>
       <_Parameter2>true</_Parameter2>
     </AssemblyAttribute>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Files\Project2019.rvt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\Project2021.rvt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
