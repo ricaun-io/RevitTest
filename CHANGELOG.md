@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.1.0] / 2025-02-19
 - Update to [ricaun.RevitTest.TestAdapter 1.9.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
-- Video [RevitTest Version 1.9.0 - TestFixture](https://youtube.com/ricaun)
+- Video [RevitTest Version 1.9.0 - TestFixture](https://youtube.com/sxE7dfBK5Ok)
 ### Features
 - Support `TestFixture/TestFixtureSource` (Fix: #25)
 ### Tests
