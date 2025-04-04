@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.10.0] / 2025-04-04
+- Update to [ricaun.RevitTest.TestAdapter 1.10.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
+- Video [RevitTest Version 1.10.0 - dotnet test --filter](https://youtu.be/rXmxdQFAKnk)
+### Features
+- Support `dotnet test --filter` with properties `FullyQualifiedName` and `Name`. (Fix: #30)
+- Example: [dotnet-test | Filter option details](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-test?tabs=dotnet-test-with-vstest#filter-option-details)
+	```bash
+	dotnet test .\RevitTest.Samples\RevitTest.Samples.csproj --filter "FullyQualifiedName~VersionBuild"
+	```
+### Tests
+- Add `RevitTests_VersionBuild` with `VersionBuild`.
+
 ## [1.1.0] / 2025-02-19
 - Update to [ricaun.RevitTest.TestAdapter 1.9.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 - Video [RevitTest Version 1.9.0 - TestFixture](https://youtu.be/sxE7dfBK5Ok)
@@ -64,6 +76,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - First Release - [ricaun.RevitTest.TestAdapter 1.3.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [vNext]: ../../compare/1.0.0...HEAD
+[1.10.0]: ../../compare/1.1.0...1.10.0
 [1.1.0]: ../../compare/1.0.9...1.1.0
 [1.0.9]: ../../compare/1.0.8...1.0.9
 [1.0.8]: ../../compare/1.0.7...1.0.8
