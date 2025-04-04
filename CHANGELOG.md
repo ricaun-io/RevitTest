@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.10.0] / 2025-04-04
 - Update to [ricaun.RevitTest.TestAdapter 1.10.0](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
-- Video [RevitTest Version 1.10.0 - dotnet test --filter](https://youtu.be/rXmxdQFAKnk)
+- Video [RevitTest Version 1.10.0 - dotnet test --filter](https://youtu.be/iq9T-jbO_90)
 ### Features
 - Support `dotnet test --filter` with properties `FullyQualifiedName` and `Name`. (Fix: #30)
 - Example: [dotnet-test | Filter option details](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-test?tabs=dotnet-test-with-vstest#filter-option-details)
