@@ -12,6 +12,13 @@ namespace RevitTest.Sample
             Assert.IsNotNull(application);
             Console.WriteLine(application.VersionName);
         }
+
+        [Test]
+        public void RevitTests_VersionBuild()
+        {
+            Assert.IsNotNull(application);
+            Console.WriteLine(application.VersionBuild);
+        }
     }
 
     public abstract class ApplicationTests
