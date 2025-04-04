@@ -1,10 +1,10 @@
 # RevitTest.Samples
 
-[![Revit 2024](https://img.shields.io/badge/Revit-2024+-blue.svg)](../..)
-[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Revit 2024](https://img.shields.io/badge/Revit-2024+-blue.svg)](https://github.com/ricaun-io/RevitTest/)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](https://github.com/ricaun-io/RevitTest/)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
+[![Build](https://github.com/ricaun-io/RevitTest/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/RevitTest/actions)
 [![nuget](https://img.shields.io/nuget/v/ricaun.RevitTest.TestAdapter?logo=nuget&label=nuget&color=blue)](https://www.nuget.org/packages/ricaun.RevitTest.TestAdapter)
 
 [![RevitTest.Samples](assets/RevitTest.Samples.png)](https://github.com/ricaun-io/RevitTest)
@@ -336,4 +336,4 @@ This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia
 
 ---
 
-Do you like this project? Please [star this project on GitHub](../../stargazers)!
+Do you like this project? Please [star this project on GitHub](https://github.com/ricaun-io/RevitTest//stargazers)!
